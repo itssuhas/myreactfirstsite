@@ -1,0 +1,60 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+
+
+* {
+
+  font-family: 'Mulish', sans-serif;
+
+}
+
+.navbar a
+{
+font-size: 1.3rem;
+text-transform: capitalize;
+}
+.animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+0% {
+  transform: translateY(10px);
+}
+100% {
+  transform: translateY(-10px);
+}
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.menu_active{
+
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+}
+
+
+.navbar a:hover{
+  color: lightblue;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
